@@ -1,6 +1,11 @@
 import { Component } from 'react';
 import * as classnames from "classnames";
 
+/**
+ * Blocks
+ */
+import CoverImage from '../components/blocks/coverImage';
+
 class Index extends Component {
 
     constructor(props, context) {
@@ -49,6 +54,7 @@ class Index extends Component {
                 transform: translateX(0%);
             }
             `}</style>
+            <CoverImage />
         </div>
 
         )
