@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
+    "build": "next build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@zeit/next-sass": "^0.1.2",
     "classnames": "^2.2.5",
     "next": "^5.1.0",
+    "node-sass": "^4.8.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
