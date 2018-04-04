@@ -17,6 +17,7 @@
     "next": "^5.1.0",
     "node-sass": "^4.8.3",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-easy-state": "^5.0.0"
   }
 }
