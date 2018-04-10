@@ -4,9 +4,9 @@ import Meta from "../components/meta";
 import { Fragment } from "react";
 
 export default ({ children }) => (
-  <div>
+  <Fragment>
     <Meta />
     {children}
     {/* <Footer /> */}
-  </div>
+  </Fragment>
 );

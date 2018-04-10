@@ -1,7 +1,10 @@
 import Page from "../layouts/main";
 import { Component } from "react";
+
 import * as classnames from "classnames";
 import BlockList from "../components/blocks/blockList";
+import Button from "../components/shared/button";
+import Inspector from "../components/editor/inspector";
 
 class Index extends Component {
   constructor(props, context) {
@@ -18,7 +21,6 @@ class Index extends Component {
     this.setState({
       visible: !this.state.visible
     });
-    console.log(this.state.visible);
   }
 
   render() {
@@ -28,27 +30,9 @@ class Index extends Component {
 
     return (
       <Page>
-        <nav className={navClass}>
-          <label>Title text</label>
-        </nav>
+        <Inspector navClass={navClass} />
         <p>Select your next block</p>
-        <a onClick={this.toggleMenu}>Cover Image</a>
-        <style jsx>{`
-          .inspector {
-            position: fixed;
-            width: 10rem;
-            background-color: #292929;
-            color: rgb(170, 170, 170);
-            padding: 1rem;
-            top: 0;
-            left: 0;
-            transform: translateX(-100%);
-            transition: transform 0.3s ease;
-          }
-          .inspector.open {
-            transform: translateX(0%);
-          }
-        `}</style>
+        <Button title="test" onClickButton={this.toggleMenu} />
         <BlockList />
       </Page>
     );
